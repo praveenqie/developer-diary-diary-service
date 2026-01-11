@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: developer diary diary service
