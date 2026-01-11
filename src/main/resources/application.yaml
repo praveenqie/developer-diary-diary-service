@@ -1,3 +1,19 @@
+server:
+  port: 8082
 spring:
   application:
     name: developer diary diary service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/developer_diary
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        default_schema: auth_schema
+        format_sql: true
